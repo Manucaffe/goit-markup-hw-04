@@ -1,0 +1,120 @@
+/*  Global Settings */
+
+:root {
+    --primary-color: #ffffff;
+    --link-color: #4D5AE5;
+    --link-color_hover: #404BBF;
+    --text-color: #434455;
+}
+
+/* Body Section */
+
+.body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: roboto, sans-serif;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Top Line Navigation Menu */
+
+.logo {
+    text-decoration: none;
+    color: #2E2F42;
+    font-size: 18px;
+    line-height: 1.3125em;
+    list-style-type: none;
+}
+
+.logo::before {
+    text-decoration: none;
+    content: "WEB";
+    color: #4D5AE5;
+    font-size: 18px;
+    line-height: 1.3125em;
+    list-style-type: none;
+
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #2E2F42;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: var(--link-color_hover);
+}
+
+/*  Contact Section ( email, phone ) */
+
+.contact-mail,
+.contact-phone {
+    color: #434455;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-phone:hover,
+.contact-phone:focus {
+    color: #4D5AE5;
+}
+
+/* Hero Image Container */
+
+h1 {
+    font-size: 56px;
+    color: black;
+    /* color: #ffffff; */
+    /* Am pus negru provizoriu ca sa se vada */
+    line-height: 3.75em;
+}
+
+.button-service {
+    /* color: #ffffff; */
+    /* Am pus negru provizoriu ca sa se vada */
+    color: black;
+    cursor: pointer;
+}
+
+.button-section .filter-button:hover,
+.button-section .filter-button:focus {
+    color: var(--link-color_hover);
+}
+
+/* Features Section */
+
+h2 {
+    font-size: 36px;
+    color: #2E2F42;
+    line-height: 2.5em;
+}
+
+h3 {
+    font-size: 20px;
+    color: #2E2F42;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 16px;
+    color: #434455;
+    line-height: 1.5em;
+}
+
+
+
+/* Footer bar Section */
+
+.footer-bar .references {
+    color: black;
+    /* color: #F4F4FD; */
+    /* Am pus provizoriu black ca sa se vada pe fundalul alb.*/
