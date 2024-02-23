@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,53 +12,53 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/modern-nomalize.css">
 </head>
-<body>
-    <!-- Main Page content -->
+<body class="body-container">
+    <!-- Main Page section -->
     <main>
+
         <!-- Top Navigation Menu -->
-        <header class="global-header">
-            <nav class="main-nav">
-                <ul>
+        <header class="header-section">
+            <section class="header-container">
+            <a href="index.html" class="logo">STUDIO
+            </a>
+            <nav class="nav-bar">
+                <ul class="nav-bar-list">
                     <li>
-                        <a href="index.html" class="logo">STUDIO
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="index.html" target="_self" rel="nofollow noopener noreferrer">Studio</a>
+                        <a class="studio-item" href="index.html" target="_self" rel="nofollow noopener noreferrer">Studio</a>
                     </li>
                     <li>
-                        <a href="portfolio.html" target="_self" rel="nofollow noopener noreferrer">Portfolio</a>
+                        <a class="portfolio-item" href="portfolio.html" target="_self" rel="nofollow noopener noreferrer">Portfolio</a>
                     </li>
                     <li>
-                        <a href="contacts.html" target="_self" rel="nofollow noopener noreferrer">Contacts</a>
+                        <a class="contacts-item" href="contacts.html" target="_self" rel="nofollow noopener noreferrer">Contacts</a>
                     </li>
                 </ul>
             </nav>
 
             <!-- Contact section -->
-
-            <address class="contact-mail">
-                <a>info@devstudio.com</a>
-            </address>
-            <address class="contact-phone">
-                <a>+11 (000) 111-11-11</a>
-            </address>             
+            <div class="contact-container">
+                <address class="contact-mail">
+                    <a>info@devstudio.com</a>
+                </address>
+                <address class="contact-phone">
+                    <a>+11 (000) 111-11-11</a>
+                </address>     
+            </div>    
+            </section>    
         </header>
         
-        <!-- Hero Image Container -->
-
+        <!-- Hero Image Section -->
+        <section class="hero-section">
             <h1>Effective Solutions for Your Business</h1>
+            <button type="button">Order service</button>
+        </section>
 
-        <!-- Order service button -->
-
-        <button class="button-service" type="button">Order service</button>
-        
         <!-- Section 1 - Features -->
+
         <section>
-            <div class="description-container">
+            <div class="features-container">
                 <ul>
                     <li>
                         <h3 class="futures-height">Strategy</h3>
@@ -89,49 +90,52 @@
 
         <!-- Section 2 - What are we doing -->
 
-        <section>
-            <h2>What are we doing</h2>
-            <img src="./images/img-1.jpg" alt="This is an image with a monitor." 
-                widht="360" height="300">
-            <img src="./images/img-2.jpg" alt="This is a phone with multiple pages." 
-                width="360" height="300">
-            <img src="./images/img-3.jpg" alt="Man with a phone in his hand and a laptop in background." 
-                width="360" height="300">
+        <section class="our-work-container">
+            <h2 class="section-2-text">What are we doing</h2>
+            <div class="our-work-photos">
+                <img src="./images/img-1.jpg" alt="This is an image with a monitor." widht="360" height="300">
+                <img src="./images/img-2.jpg" alt="This is a phone with multiple pages." width="360" height="300">
+                <img src="./images/img-3.jpg" alt="Man with a phone in his hand and a laptop in background." width="360" height="300">
+            </div>
+           
         </section>
         
         <!-- section 3 - Our team -->
-        <section>
-            <h2>Our Team</h2>
-            <ul class="team">
-                <li>
-                    <img src="./images/mark-guerrero.jpg" alt=" A photo with a men called Mark Guerrero" width="264" height="260">
-                    <div class="team-card">
-                        <h3>Mark Guerrero</h3>
-                        <p>Product Designer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/tom-ford.jpg" alt=" A photo with a men called Tom Ford" width="264" height="260">
-                    <div class="team-card">
-                        <h3>Tom Ford</h3>
-                        <p>Frontend Developer</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/camila-garcia.jpg" alt=" A photo with a woman called Camila Garcia" width="264" height="260">
-                    <div class="team-card">
-                        <h3>Camila Garcia</h3>
-                        <p>Marketing</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./images/daniel-wilson.jpg" alt=" A photo with a men called Daniel Wilson" width="264" height="260">
-                    <div class="team-card">
-                        <h3>Daniel Wilson</h3>
-                        <p>UI Designer</p>
-                    </div>
-                </li>
-            </ul>
+        <section class="our-team-container">
+            <div class="team-card">
+                <h2 class="our-team">Our Team</h2>
+                <ul class="team">
+                    <li>
+                        <img src="./images/mark-guerrero.jpg" alt=" A photo with a men called Mark Guerrero" width="264" height="260">
+                        <div class="team-card">
+                            <h3>Mark Guerrero</h3>
+                            <p>Product Designer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/tom-ford.jpg" alt=" A photo with a men called Tom Ford" width="264" height="260">
+                        <div class="team-card">
+                            <h3>Tom Ford</h3>
+                            <p>Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/camila-garcia.jpg" alt=" A photo with a woman called Camila Garcia" width="264" height="260">
+                        <div class="team-card">
+                            <h3>Camila Garcia</h3>
+                            <p>Marketing</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/daniel-wilson.jpg" alt=" A photo with a men called Daniel Wilson" width="264" height="260">
+                        <div class="team-card">
+                            <h3>Daniel Wilson</h3>
+                            <p>UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+           
         </section>
     </main> 
     <!-- Footer container -->
