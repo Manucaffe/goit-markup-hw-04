@@ -50,7 +50,8 @@
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-.header-section .header-container {
+.header-section 
+.header-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +90,6 @@
     list-style-type: none;
     margin: 24px 76px 24px 156px;
     padding-left: 40px;
-
 }
 
 .logo::before {
@@ -174,7 +174,7 @@
     color: #4D5AE5;
 }
 
-/* Hero Section */
+/* Hero Tab Section */
 
 .hero-section {
     margin-top: 96px;
@@ -211,11 +211,8 @@
     color: #ffffff;
 }
 
-
-/* ---------Pana aici e ok ----------*/
-
-
 /* Row Section */
+
 .project-card-1 {
     max-width: 1200px;
     margin: 72px 156px 48px 156px;
@@ -223,7 +220,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 24px;
     background-color: var(--primary-color);
 }
@@ -235,7 +232,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 24px;
     background-color: var(--primary-color);
 }
@@ -247,10 +244,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 24px;
     background-color: var(--primary-color);
 }
+
+.card-content {
+    width: 360px;
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-left: 16px;
+    border: 1px solid #E7E9FC;
+}
+
 .card-content h3 {
     color: #2E2F42;
     font-size: 20px;
@@ -263,20 +269,15 @@
     line-height: 1.5em;
 }
 
-
-
-
-
-/*  Footer Container e ok!!!!!!!!!!!!!!! */
+/*  Footer Container */
 
 .footer-container {
     width: 1440px;
     height: 312px;
-    background-color: #2E2F42;/
+    background-color: #2E2F42;
 }
 
 .footer-list {
-   
     max-width: 1200px;
     align-items: center;
     width: 264px;
@@ -285,15 +286,18 @@
     margin-left: 120px;
 }
 
-.footer-list .references {
+.footer-list 
+.references {
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5em;
     width: 264px;
     height: 112px;
+    margin-top: 16px;
 }
 
-.footer-list .footer-logo {
+.footer-list 
+.footer-logo {
     display: flex;
     width: 115px;
     height: 24px;
@@ -303,11 +307,13 @@
     font-weight: 800;
     line-height: 1.3125em;
     list-style-type: none;
-
+    font-weight: 800;
 }
 
 .footer-logo::before {
     text-decoration: none;
     content: "WEB";
     color: #4D5AE5;
+    font-weight: 800;
+    padding-bottom: 16px;
 }
