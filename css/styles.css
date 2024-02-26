@@ -207,7 +207,7 @@
     padding-top: 188px; 
 }
 .button {
-    color: #ffffff;
+    color: var(--primary-color);
     background-color: #4D5AE5;
     box-sizing: border-box;
     justify-content: center;
@@ -221,9 +221,11 @@
     margin-top: 150px;
 }
 
-.button-section .filter-button:hover,
-.button-section .filter-button:focus {
-    color: var(--link-color_hover);
+.button:active,
+.button:hover,
+.button:focus {
+    background-color: #404BBF;
+    color: var(--primary-color);
 }
 
 /* Features Section */

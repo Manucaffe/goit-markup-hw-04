@@ -3,62 +3,168 @@
 :root {
     --primary-color: #ffffff;
     --link-color: #4D5AE5;
-    --link-color_hover: #404BBF;
+    --link-color-hover: #404BBF;
     --text-color: #434455;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --green: #31D0AA;
+    --slate: #434455;
+    --lite-slate: #8E8F99;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+    --navy-blue-modal: #2E2F42;
+    --grey: #2E2F42;
+    --dairy: #FCFCFC;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+
+* {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--font-family);
+    /* width: 1440px; */
 }
 
 /* Body Section */
 
-.body {
+.body-container {
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: roboto, sans-serif;
     line-height: 1.5em;
+    width: 1440px;
+
 }
 
-ul {
+.header-section {
+    background-color: var(--primary-color);
+    line-height: 1.5em;
+    width: 1440px;
+    height: 72px;
+    display: flex;
+    border: 2px solid #E7E9FC;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.header-section .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    height: 72px;
+    color: var(--text-color);
+    font-family: roboto, sans-serif;
+}
+
+.nav-bar-list {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 261px;
+    height: 24px;
+    gap: 40px;
     list-style-type: none;
+    font-weight: 500;
+    color: var(--navy-blue);
 }
 
 /* Top Line Navigation Menu */
 
 .logo {
+    box-sizing: border-box;
+    display: flex;/* flex-direction: row; */
+    width: 115px;
+    height: 24px;
     text-decoration: none;
     color: #2E2F42;
     font-size: 18px;
+    font-weight: 800;
     line-height: 1.3125em;
     list-style-type: none;
+    margin: 24px 76px 24px 156px;
+    padding-left: 40px;
+
 }
 
 .logo::before {
     text-decoration: none;
     content: "WEB";
     color: #4D5AE5;
-    font-size: 18px;
-    line-height: 1.3125em;
-    list-style-type: none;
-    
 }
 
-.main-nav a {
-    text-decoration: none;
+.nav-bar {
+    width: 261px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: #2E2F42;
-    cursor: pointer;
+}
+
+.studio-item {
+    box-sizing: border-box;
+    display: flex; width: 48px;
+    height: 24px;
     list-style-type: none;
 }
 
-.main-nav a:hover,
-.main-nav a:focus {
+.portfolio-item {
+    box-sizing: border-box;
+    display: flex;
+    width: 66px;
+    height: 24px;/* margin: 20px; */
+}
+
+.contacts-item {
+    box-sizing: border-box;
+    display: flex;
+    width: 67px;
+    height: 24px;/* margin: 20px; */
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus {
     color: var(--link-color_hover);
 }
 
 /*  Contact Section ( email, phone ) */
 
-.contact-mail,
+.contact-container {
+    display: flex;
+    height: 24px;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* .contact-mail, */
+
+.contact-mail {
+    color: #434455;
+    line-height: 1.5em;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 153px;
+    height: 24px;
+    margin-left: 400px;
+}
+
 .contact-phone {
     color: #434455;
     line-height: 1.5em;
     text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 151px;
+    height: 24px;
 }
 
 .contact-mail:hover,
@@ -68,20 +174,83 @@ ul {
     color: #4D5AE5;
 }
 
-/* Hero Tab Container */
+/* Hero Section */
 
-.button-section .filter-button {
+.hero-section {
+    margin-top: 96px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.filter-button {
+    background-color: #F4F4FD;
     color: var(--link-color);
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: 16px;/* line-height: 1.5; */
+    font-weight: 500;
     cursor: pointer;
+    border: 1px;
+    border-color: #E7E9FC;
 }
 
-.button-section .filter-button:hover,
-.button-section .filter-button:focus {
-    color: var(--link-color_hover);
+.filter-button:active,
+.filter-button:focus,
+.filter-button:hover {
+    background-color: var(--link-color-hover);
+    color: #ffffff;
 }
+
+
+/* ---------Pana aici e ok ----------*/
+
 
 /* Row Section */
+.project-card-1 {
+    max-width: 1200px;
+    margin: 72px 156px 48px 156px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    background-color: var(--primary-color);
+}
 
+.project-card-2 {
+    max-width: 1200px;
+    margin: 24px 156px 48px 156px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    background-color: var(--primary-color);
+}
+
+.project-card-3 {
+    max-width: 1200px;
+    margin: 24px 156px 120px 156px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    background-color: var(--primary-color);
+}
 .card-content h3 {
     color: #2E2F42;
     font-size: 20px;
@@ -94,10 +263,51 @@ ul {
     line-height: 1.5em;
 }
 
-/* Footer bar Section */
 
-.footer-bar .references {
-    color: black;
-    /* color: #F4F4FD; */
-    /* Am pus provizoriu black ca sa se vada pe fundalul alb.*/
+
+
+
+/*  Footer Container e ok!!!!!!!!!!!!!!! */
+
+.footer-container {
+    width: 1440px;
+    height: 312px;
+    background-color: #2E2F42;/
+}
+
+.footer-list {
+   
+    max-width: 1200px;
+    align-items: center;
+    width: 264px;
+    height: 72px;
+    padding-top: 120px;
+    margin-left: 120px;
+}
+
+.footer-list .references {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5em;
+    width: 264px;
+    height: 112px;
+}
+
+.footer-list .footer-logo {
+    display: flex;
+    width: 115px;
+    height: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3125em;
+    list-style-type: none;
+
+}
+
+.footer-logo::before {
+    text-decoration: none;
+    content: "WEB";
+    color: #4D5AE5;
 }
