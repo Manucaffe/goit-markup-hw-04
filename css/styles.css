@@ -448,15 +448,38 @@ p {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    min-width: 356px;
+    /* min-width: 356px; */
     padding: 0;
 }
   
-.customer-icon-box {
+.customers-icon-box {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    width: 180px;
+    height: 88px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px
 }
 
+.customers-icon-box:hover {
+   fill: #404BBF;
+}
+.customer-icon:hover {
+    fill: #404BBF;
+}
+
+.customer-icon svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 60px;
+    fill: #8e8f99;
+
+}
 
 /* Footer Container */
 
