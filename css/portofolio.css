@@ -244,6 +244,19 @@
     background-color: var(--primary-color);
 }
 
+.project-card-1:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.project-card-2:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+}
+.project-card-3:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+
+}
 .project-card-2 {
     max-width: 1200px;
     margin: 24px 156px 48px 156px;
@@ -287,6 +300,7 @@
     font-size: 16px;
     line-height: 1.5em;
 }
+
 
 /*  Footer Container */
 
@@ -338,4 +352,43 @@
     color: #4D5AE5;
     font-weight: 800;
     padding-bottom: 16px;
+}
+
+.social-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media-text {
+    color: #FFFFFF;
+    size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.icons-list-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 260px;
+    margin-left: 120px;
+}
+
+.icons-list-footer .icon-bg {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.icon-bg:hover {
+    background-color: #404BBF;
 }
