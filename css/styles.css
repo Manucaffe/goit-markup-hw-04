@@ -18,6 +18,7 @@
     --dairy: #FCFCFC;
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
+    --currentcolor: #ffffff;
 }
 
 * { 
@@ -26,7 +27,6 @@
     list-style-type: none;
     text-decoration: none;
     font-family: var(--font-family);
-    /* width: 1440px; */
 }
 
 /* Body Section */
@@ -36,7 +36,6 @@
     color: var(--text-color);
     font-family: roboto, sans-serif;
     line-height: 1.5em;
-    /* width: 1440px; */
  
 } 
 
@@ -60,7 +59,6 @@
 .header-container {
     display: flex;
     justify-content: space-around;
-    /* flex-direction: row; */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -104,8 +102,6 @@
     font-weight: 800;
     line-height: 1.3125em;
     list-style-type: none;
-    /* margin: 24px 76px 24px 156px; */
-    /* padding-left: 40px; */
     font-weight: 800;
 }
 
@@ -119,10 +115,8 @@
 .studio-item {
     box-sizing: border-box;
     display: flex;
-    /* justify-content: center; */
     width: 48px;
-    height: 24px;
-    /* margin: 20px; */
+    height: 24px; 
 }
 
 .portfolio-item {
@@ -130,14 +124,12 @@
     display: flex;  
     width: 66px;
     height: 24px;
-    /* margin: 20px; */
 }
 .contacts-item {
     box-sizing: border-box;
     display: flex;
     width: 67px;
     height: 24px;
-    /* margin: 20px; */
 }
 
 .nav-bar a:active,
@@ -153,7 +145,6 @@
     height: 24px;
     gap: 30px;
     padding-top: 20px;
-    
 }
 
 /* .contact-mail, */
@@ -183,6 +174,7 @@
     height: 24px;
     list-style-type: none;
 }
+
 .contact-mail:active,
 .contact-mail:hover,
 .contact-mail:focus,
@@ -195,8 +187,6 @@
 /* Hero Image Section */
 
 .hero-background {
-    
-    /* background-color: #2E2F42; */
     background: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("/images/people-office.png");
     width: 1440px;
     height: 600px;
@@ -212,7 +202,6 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.5;
-  
 } 
 
 .hero-container h1 {
@@ -226,6 +215,7 @@
     text-align: center; 
     padding-top: 188px; 
 }
+
 .button {
     color: var(--primary-color);
     background-color: #4D5AE5;
@@ -316,7 +306,6 @@ p {
 
 /* Section 2 - What are we doing */
 
-
 .bg-section {
     width: 1440px;
     margin: 0 auto;
@@ -324,10 +313,8 @@ p {
 .our-work {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* padding-top: 80px; */
+    align-items: center; /* padding-top: 80px; */
     padding-bottom: 30px;
-
 }
 
 .our-work-image {
@@ -350,7 +337,6 @@ p {
     background-color: #F4F4FD;
     margin: 0 auto;
     margin-top: 60px;
-    /* padding: 120px 0 150px; */
 }   
 
 .card-container {
@@ -361,7 +347,7 @@ p {
 .our-team {
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 100px;
 }       
 
 .global-team {
@@ -410,7 +396,6 @@ p {
 
 }
 
-
  .icons-list .icon-bg {
     display: flex;
     /* flex-wrap: wrap; */
@@ -426,10 +411,14 @@ p {
     background-color: #404BBF;
 }
 
+.social-icons {
+    color: var(--cloud)
+}
+
 /* Customers Section */
 
 .customers-section {
-    width: 1440px;
+    /* width: 1440px; */
     margin: 0 auto;
     margin: 120px 0;
 }
@@ -448,7 +437,6 @@ p {
     justify-content: center;
     align-items: center;
     gap: 24px;
-    /* min-width: 356px; */
     padding: 0;
 }
   
@@ -461,14 +449,13 @@ p {
     width: 180px;
     height: 88px;
     border: 1px solid #8e8f99;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 .customers-icon-box:hover {
-   fill: #404BBF;
-}
-.customer-icon:hover {
-    fill: #404BBF;
+   /* background-color: #4D5AE5; */
+   border-radius: 2px;
+   border-color: #404BBF;
 }
 
 .customer-icon svg {
@@ -477,8 +464,16 @@ p {
     align-items: center;
     width: 104px;
     height: 60px;
-    fill: #8e8f99;
+    color: var(--lite-slate);
+}
 
+.customer-icon svg:hover {
+    color: var(--link-color-hover);
+}
+
+.customers-title {
+    margin-top: -40px;
+    padding-bottom: 40px;;
 }
 
 /* Footer Container */
@@ -502,16 +497,18 @@ p {
     padding-top: 100px;
 }
 
-.footer-list .references {
+.footer-list 
+.references {
+    display:flex;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5em;
     width: 264px;
-    height: 72px;
     margin-top: 16px;
 }
 
-.footer-list .footer-logo {
+.footer-list 
+.footer-logo {
     display: flex;
     width: 115px;
     height: 24px;
@@ -522,7 +519,6 @@ p {
     line-height: 1.3125em;
     list-style-type: none;
     font-weight: 800;
-
 }
 
 .footer-logo::before {

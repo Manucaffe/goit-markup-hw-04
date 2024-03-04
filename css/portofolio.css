@@ -18,6 +18,7 @@
     --dairy: #FCFCFC;
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
+    --currentcolor: #ffffff;
 }
 
 * {
@@ -26,7 +27,6 @@
     list-style-type: none;
     text-decoration: none;
     font-family: var(--font-family);
-    /* width: 1440px; */
 }
 
 /* Body Section */
@@ -36,8 +36,6 @@
     color: var(--text-color);
     font-family: roboto, sans-serif;
     line-height: 1.5em;
-    /* width: 1440px; */
-
 }
 
 .header-section {
@@ -104,8 +102,6 @@
     font-weight: 800;
     line-height: 1.3125em;
     list-style-type: none;
-    /* margin: 24px 76px 24px 156px; */
-    /* padding-left: 40px; */
     font-weight: 800;
 }
 
@@ -119,10 +115,8 @@
 .studio-item {
     box-sizing: border-box;
     display: flex;
-    /* justify-content: center; */
     width: 48px;
     height: 24px;
-    /* margin: 20px; */
 }
 
 .portfolio-item {
@@ -130,7 +124,6 @@
     display: flex;
     width: 66px;
     height: 24px;
-    /* margin: 20px; */
 }
 
 .contacts-item {
@@ -138,7 +131,6 @@
     display: flex;
     width: 67px;
     height: 24px;
-    /* margin: 20px; */
 }
 
 .nav-bar a:active,
@@ -301,7 +293,6 @@
     line-height: 1.5em;
 }
 
-
 /*  Footer Container */
 
 .global-footer {
@@ -323,16 +314,18 @@
     padding-top: 100px;
 }
 
-.footer-list .references {
+.footer-list 
+.references {
+    display: flex;
     color: #ffffff;
     font-size: 16px;
     line-height: 1.5em;
     width: 264px;
-    height: 72px;
     margin-top: 16px;
 }
 
-.footer-list .footer-logo {
+.footer-list 
+.footer-logo {
     display: flex;
     width: 115px;
     height: 24px;
@@ -343,7 +336,6 @@
     line-height: 1.3125em;
     list-style-type: none;
     font-weight: 800;
-
 }
 
 .footer-logo::before {
@@ -378,7 +370,8 @@
     margin-left: 120px;
 }
 
-.icons-list-footer .icon-bg {
+.icons-list-footer 
+.icon-bg {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
@@ -391,4 +384,7 @@
 
 .icon-bg:hover {
     background-color: #404BBF;
+}
+.social-icons {
+    color: var(--cloud)
 }
